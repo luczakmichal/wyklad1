@@ -38,11 +38,12 @@ a{
 }
 
 .bg{
-    background-image: url("ziemniaczki.jpg") repeat-x bottom left;
+    animation: bg 60s linear infinite; 
+    background: url("bg.jpg") repeat-x bottom left;
     height: 100%;
     position: absolute;
-    background-size: 1000px;
-    width: 400px;
+    background-size: 1500px;
+    width: 4500px;
 }
 
 .middle-box{
@@ -86,7 +87,17 @@ a{
     }
 
     100%{
-        margin-top: -250px;
+        margin-top: -300px;
         opacity: 1;
+    }
+}
+
+@keyframes bg{
+    0%{
+        left: 0;
+    }
+    
+    100%{
+        left: -1500px;
     }
 }
