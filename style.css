@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 2;
@@ -21,7 +21,7 @@ p{
     opacity: 0.8;
 }
 
-a{
+i{
     color: white;
     outline: 0;
     text-decoration: none;
@@ -38,7 +38,7 @@ a{
 }
 
 .bg{
-    animation: bg 65s linear infinite; 
+    animation: bg 60s linear infinite; 
     background: url("bg.jpg") repeat-x bottom left;
     height: 100%;
     position: absolute;
@@ -76,7 +76,7 @@ a{
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.nav-item a{
+.nav-item i{
     font-size: 30px;
 }
 
