@@ -1,7 +1,12 @@
 body{
+    overflow: hidden;
     margin: 0;
     padding: 0;
     color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
 }
 
 h1{
@@ -13,7 +18,7 @@ h1{
 p{
     font-size: 24px;
     margin: 0 0 24px 0;
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 a{
@@ -25,13 +30,63 @@ a{
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-color: #348cb2;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.bg{
+    background-image: url("ziemniaczki.jpg") repeat-x bottom left;
+    height: 100%;
+    position: absolute;
+    background-size: 1000px;
+    width: 400px;
 }
 
 .middle-box{
     text-align: center;
     width: 100%;
+    opacity: 0;
+    animation: show 0.8s ease-in-out 0.15s forwards;
+    margin-top: -220px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    transition: all 0.3s ease-in-out;
+    border-radius: 100%;
+    border: solid 1px white;
+    width: 72px;
+    height: 72px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-item a{
+    font-size: 30px;
+}
+
+@keyframes show{
+    0%{
+        margin-top: -220px;
+        opacity: 0;
+    }
+
+    100%{
+        margin-top: -250px;
+        opacity: 1;
+    }
 }
