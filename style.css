@@ -38,7 +38,7 @@ a{
 }
 
 .bg{
-    animation: bg 60s linear infinite; 
+    animation: bg 65s linear infinite; 
     background: url("bg.jpg") repeat-x bottom left;
     height: 100%;
     position: absolute;
